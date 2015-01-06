@@ -1,0 +1,11 @@
+{
+  "name": "still-interactive.com",
+  "version": "1.0.0",
+  "description": "Still Interactive official web site",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Alexander Stillesjö",
+  "license": "ISC"
+}
