@@ -1,0 +1,24 @@
+<!doctype HTML>
+<html lang="en" ng-app="stillInteractiveApp">
+  <head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <title>Still Interactive</title>
+    <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="css/app.css">
+    <script src="/bower_components/jquery/dist/jquery.js" type="text/javascript" charset="utf-8"></script>
+    <script src="/bower_components/angular/angular.js" type="text/javascript" charset="utf-8"></script>
+    <script src="/bower_components/angular-route/angular-route.js" type="text/javascript" charset="utf-8"></script>
+    <script src="/bower_components/angular-resource/angular-resource.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/MainController.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/app.js" type="text/javascript" charset="utf-8"></script>
+  </head>
+  <body>
+    <div id="header-container" ng-include src="'partials/header.html'">
+    </div>
+    <div class="view-container">
+      <div ng-view class="view-frame">
+      </div>
+    </div>
+    
+  </body>
+</html>

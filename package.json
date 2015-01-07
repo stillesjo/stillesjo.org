@@ -4,8 +4,10 @@
   "description": "Still Interactive official web site",
   "main": "index.js",
   "scripts": {
+    "postinstall" : "bower install",
+    "start": "http-server -a 127.0.0.1 -p 8080",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Alexander Stillesjö",
-  "license": "ISC",
+  "license": "ISC"
 }
