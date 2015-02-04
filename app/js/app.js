@@ -1,8 +1,22 @@
 'use strict';
 
+
 var stillInteractiveApp = angular.module('stillInteractiveApp', [
-    'ngRoute'
+    'ngRoute', 'mgcrea.ngStrap'
 ]);
+
+stillInteractiveApp.controller('HeaderController',['$scope', '$location', function($scope, $location) {
+  $scope.isActive = function(viewLocation) {
+    return viewLocation == $location.path();
+  };
+}]);
+
+
+// ($scope, $location) {
+//   $scope.isActive() = function(viewLocation) {
+//     return viewlocation == $location.path();
+//   }; 
+// }
 
 stillInteractiveApp.config(['$routeProvider', 
     function($routeProvider) {
@@ -18,8 +32,3 @@ stillInteractiveApp.config(['$routeProvider',
         });
     }]);
 
-function HeaderController($scope, $location) {
-  $scope.isActive() = function(viewLocation) {
-    return viewlocation == $location.path();
-  }; 
-}
