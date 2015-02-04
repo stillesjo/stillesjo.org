@@ -1,16 +1,12 @@
 <div id="header">
   <h2><a href="#">Still Interactive</a></h2>
-  <div id="header-nav">
-  
-    <ul>
-      <li><a href="#/about">About</a></li>
-      <li>
-        <a href="#">Products &#9662;</a>
-        <ul>
-          <li><a href="#/shet">Scrum Helper Estimation Tool (Android)</a></li>
-        </ul>
-      </li>
+
+  <div ng-controller="HeaderController">
+
+    <ul class="nav nav-tabs" role="tablist">
+      <li role="presentation" ng-class="{ active: isActive('/app/#') }"><a href="#">Home</a></li>
+      <li role="presentation" ng-class="{ active: isActive('/app/shet') }"><a href="/shet" target="_blank">SHET</a></li>
+      <li role="presentation" ng-class="{ active: isActive('/app/about') }"><a href="/app/about" target="_blank">About</a></li>
     </ul>
   </div>
-  </div>
-<div style="clear:both;"> </div>
+  <div style="clear:both;"> </div>

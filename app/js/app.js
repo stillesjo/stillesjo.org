@@ -17,3 +17,9 @@ stillInteractiveApp.config(['$routeProvider',
           redirectTo: "/"
         });
     }]);
+
+function HeaderController($scope, $location) {
+  $scope.isActive() = function(viewLocation) {
+    return viewlocation == $location.path();
+  }; 
+}
