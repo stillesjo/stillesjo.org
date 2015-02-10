@@ -2,7 +2,7 @@
 <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
 <div class="container" ng-controller="HeaderController">
   <div class="navclass-header">
-    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+    <button class="navbar-toggle">
       <span class="sr-only">Toggle navigation</span>
       <span class="icon-bar"></span>
       <span class="icon-bar"></span>
@@ -10,12 +10,10 @@
     </button>
     <a class="navbar-brand" href="#">Still Interactive</a>
   </div>
-  <div class="navbar-collapse collapse" id="navbar">
-    <ul class="nav navbar-nav " role="tablist">
-      <li role="presentation" ng-class="{ active: isActive('/') }"><a href="#/" >Home</a></li>
-      <li role="presentation" ng-class="{ active: isActive('/shet') }"><a href="#/shet" >SHET</a></li>
-      <li role="presentation" ng-class="{ active: isActive('/about') }"><a href="#/about" >About</a></li>
-    </ul>
-  </div>
+  <ul class="nav navbar-nav " role="tablist">
+    <li role="presentation" ng-class="{ active: isActive('/') }"><a href="#/" >Home</a></li>
+    <li role="presentation" ng-class="{ active: isActive('/shet') }"><a href="#/shet" >SHET</a></li>
+    <li role="presentation" ng-class="{ active: isActive('/about') }"><a href="#/about" >About</a></li>
+  </ul>
 </div>
 <div style="clear:both; padding-bottom:1em;"> </div>
