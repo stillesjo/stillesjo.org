@@ -2,7 +2,7 @@
 
 
 var stillInteractiveApp = angular.module('stillInteractiveApp', [
-    'ngRoute', 'mgcrea.ngStrap', 'ui.bootstrap'
+    'ngRoute', 'mgcrea.ngStrap'//, 'ui.bootstrap'
 ]);
 
 stillInteractiveApp.controller('HeaderController',['$scope', '$location', function($scope, $location) {
