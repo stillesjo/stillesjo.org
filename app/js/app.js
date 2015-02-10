@@ -11,13 +11,6 @@ stillInteractiveApp.controller('HeaderController',['$scope', '$location', functi
   };
 }]);
 
-
-// ($scope, $location) {
-//   $scope.isActive() = function(viewLocation) {
-//     return viewlocation == $location.path();
-//   }; 
-// }
-
 stillInteractiveApp.config(['$routeProvider', 
     function($routeProvider) {
       $routeProvider.
