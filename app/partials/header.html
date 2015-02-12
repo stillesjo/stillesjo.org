@@ -1,4 +1,3 @@
-<!--<h2><a href="#/">Still Interactive</a></h2>-->
 <nav class="navbar navbar-inverse navbar-default">
   <div class="container-fluid" ng-controller="HeaderController">
     <div class="navbar-header">
@@ -13,8 +12,14 @@
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
         <li ng-class="{ active: isActive('/') }"><a href="#/">Home</a></li>
-        <li ng-class="{ active: isActive('/shet') }"><a href="#/shet">SHET</a></li>
-        <li ng-class="{ active: isActive('/about') }"><a href="#/about">About</a>
+        <li ng-class="{ active: isActive('/about') }"><a href="#/about">About</a></li>
+        <li class="dropdown">
+          <a style="cursor:pointer;" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Products <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li ng-repeat="product in products">
+              <a href="#/{{product.href}}">{{product.name}}</a>
+            </li>
+          </ul>
         </li>
       </ul>
     </div>

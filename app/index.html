@@ -20,12 +20,16 @@
     <script src="js/app.js" type="text/javascript" charset="utf-8"></script>
   </head>
   <body>
-    <div id="header-container" ng-include src="'partials/header.html'">
-    </div>
-    <div class="view-container">
-      <div ng-view class="view-frame">
+    <div class="container">
+
+      <div id="header-container" ng-include src="'partials/header.html'">
       </div>
+      <div class="view-container">
+        <div ng-view class="view-frame">
+        </div>
+      </div>
+
     </div>
-    
+
   </body>
 </html>

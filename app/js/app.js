@@ -9,7 +9,19 @@ stillInteractiveApp.controller('HeaderController',['$scope', '$location', functi
   $scope.isActive = function(viewLocation) {
     return viewLocation == $location.path();
   };
+  $scope.products = [
+  {name:'SHET', href:'shet'}
+  ];
 }]);
+
+stillInteractiveApp.controller('AboutController', ['$scope', function($scope) {
+  $scope.social_networks = [
+  { url:'https://github.com/stillesjo', img:'github.png' },
+  { url:'https://se.linkedin.com/in/stillesjo/en', img:'linkedin.png'},
+  { url:'https://twitter.com/stillesjo', img:'twitter.png'}
+  ];
+}]);
+
 
 stillInteractiveApp.config(['$routeProvider', 
     function($routeProvider) {
