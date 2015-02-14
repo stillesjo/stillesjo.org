@@ -1,55 +1,54 @@
 <div class="container" ng-controller="AboutController" style="text-align:center;">
-<h1>Alexander Stillesjö</h1>
-<div style="width:200px;" class="center-block">
-  <img src="img/DSC_0176.png" style="width:200px;"></img>
-</div>
-<h3>Software Developer</h3>
-<!-- Row with icons -->
-<a ng-repeat="network in social_networks" href="{{network.url}}">
-  <img src="img/{{network.img}}"/>
-</a>
+<div class="row">
+  <div class="col-md-1">
+    
+  </div>
+  <div class="col-md-5">
+    <h1>Alexander Stillesjö</h1>
+    <div style="width:200px;" class="center-block">
+      <img src="img/DSC_0176.png" style="width:200px;"></img>
+    </div>
+    <h3>Software Developer</h3>
+    <!-- Row with icons -->
+    <a ng-repeat="network in social_networks" href="{{network.url}}">
+      <img src="img/{{network.img}}"/>
+    </a>
 
+  </div>
+  <div class="col-md-3" style="margin-top:40px;">
+    <ul class="list-group">
+      <li class="list-group-item" ng-repeat="skill in skills" ng-class="{ 'list-group-item-success': skill.superSkill, 'list-group-item-info': !skill.superSkill }">
+        <p>{{skill.name}}</p>
+      </li>
+    </ul>
+  </div> <!-- end col-md -->
+</div> <!-- end row -->
 </div> <!-- container -->
 
-<div class="container" style="margin-top:20px;" ng-controller="AboutController">
-  <div class="row">
-    <div class="col-md-5">
-      <table class="table table-condensed">
-        <tr>
-          <th>Skill</th>
-        </tr>
-        <tr ng-repeat="skill in skills">
-          <td>{{skill.name}} <span ng-if="skill.superSkill" class="glyphicon glyphicon-star"></span></td>
-        </tr>
-      </table>
-    </div> <!-- end col-md -->
-  </div> <!-- end row -->
-</div> <!-- end container -->
-
 <!--
-<div class="container" style="margin-top:20px;">
+  <div class="container" style="margin-top:20px;">
   <div class="row">
-    <div class="col-md-4">
-      <div class="jumbotron">
-        <h2>Stuff</h2>
-        <p>More stuff</p>
-        <p><a href="#" class="btn btn-primary btn-lg">Check it out</a></p>
-      </div>
-    </div>
-    <div class="col-md-4">
-      <div class="jumbotron">
-        <h2>More stuff</h2>
-        <p>This is some other stuff</p>
-        <p><a href="#" class="btn btn-primary btn-lg">Check it out</a></p>
-      </div>
-    </div>
-    <div class="col-md-4">
-      <div class="jumbotron">
-        <h2>More stuff</h2>
-        <p>This is some other stuff</p>
-        <p><a href="#" class="btn btn-primary btn-lg">Check it out</a></p>
-      </div>
-    </div>
+  <div class="col-md-4">
+  <div class="jumbotron">
+  <h2>Stuff</h2>
+  <p>More stuff</p>
+  <p><a href="#" class="btn btn-primary btn-lg">Check it out</a></p>
   </div>
-</div>
+  </div>
+  <div class="col-md-4">
+  <div class="jumbotron">
+  <h2>More stuff</h2>
+  <p>This is some other stuff</p>
+  <p><a href="#" class="btn btn-primary btn-lg">Check it out</a></p>
+  </div>
+  </div>
+  <div class="col-md-4">
+  <div class="jumbotron">
+  <h2>More stuff</h2>
+  <p>This is some other stuff</p>
+  <p><a href="#" class="btn btn-primary btn-lg">Check it out</a></p>
+  </div>
+  </div>
+  </div>
+  </div>
 -->
