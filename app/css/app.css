@@ -6,6 +6,10 @@
 body {
   padding:20px 0;
 }
+.btn-success {
+  background-color:#4B956F;
+  border-color:#4B956F;
+}
 
 img {
   border-radius:50%;
@@ -26,4 +30,35 @@ kbd {
 }
 .jumbotron h2, .jumbotron p {
   color:#333;
+}
+/* 
+ *  Header stuff
+ */
+.still-header {
+  background-color:#113951;
+  padding:200px;
+  text-align:center;
+  margin-bottom:2em;
+}
+.still-header h1 {
+  font-size:5em;
+}
+.still-header .btn-success {
+  background-color:#113951;
+  padding-right:2em;
+  padding-left:2em;
+  font-size:1.6em;
+  margin-top:1em;
+}
+.still-header .btn-success:hover {
+  background-color:#4B956F;
+}
+
+/*
+ * About stuff
+ */
+.still-about {
+  margin-top:2em;
+  background-color:#444;
+  padding:2em;
 }
