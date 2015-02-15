@@ -20,3 +20,10 @@ body {
 kbd {
   background-color:#999;
 }
+
+.jumbotron {
+  min-height:300px;
+}
+.jumbotron h2, .jumbotron p {
+  color:#333;
+}
