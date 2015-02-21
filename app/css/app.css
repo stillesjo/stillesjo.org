@@ -35,7 +35,7 @@ kbd {
  *  Header stuff
  */
 .still-header {
-  background-color:#113951;
+  background-color:#615192;
   padding:200px;
   text-align:center;
   margin-bottom:2em;
@@ -44,7 +44,7 @@ kbd {
   font-size:5em;
 }
 .still-header .btn-success {
-  background-color:#113951;
+  background-color:#615192;
   padding-right:2em;
   padding-left:2em;
   font-size:1.6em;
@@ -61,4 +61,9 @@ kbd {
   margin-top:2em;
   background-color:#444;
   padding:2em;
+}
+.still-about hr { 
+  color:#555;
+  border-color:#555;
+  background-color:#555;
 }
