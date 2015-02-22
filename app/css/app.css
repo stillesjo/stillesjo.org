@@ -3,9 +3,6 @@
 }
 
 
-body {
-  padding:20px 0;
-}
 .btn-success {
   background-color:#4B956F;
   border-color:#4B956F;
@@ -66,4 +63,14 @@ kbd {
   color:#555;
   border-color:#555;
   background-color:#555;
+}
+.still-about-footer {
+  text-align:center;
+  background-color:#615192;
+  height:200px;
+  border-top:2px solid #251556;
+  border-bottom:2px solid #251556;
+}
+.still-about-footer ul {
+  padding-top:90px;
 }

@@ -1,6 +1,7 @@
+<div ng-controller="AboutController">
 <div class="still-about">
-  
-<div class="container center-block" ng-controller="AboutController" style="text-align:center;">
+
+  <div class="container center-block" style="text-align:center;">
     <div style="width:200px; margin-bottom:40px;" class="center-block">
       <img src="img/DSC_0176.png" style="width:200px;"></img>
     </div>
@@ -10,9 +11,11 @@
     </a>
     <h1>Alexander Stillesjö</h1>
     <p class="lead"><span style="font-style:italic;">&ldquo; The best code I write is with the </span><kbd>delete</kbd><span style="font-style:italic;"> key &bdquo;</span></p>
-    <hr/>
-    <ul class="list-inline">
-      <li ng-repeat="skill in skills"><code style="color:#444;">{{skill}}</code><span class="visible-xs" style="padding:0.3em;"></span></li>
-    </ul>
-</div> <!-- container -->
+  </div> <!-- container -->
+</div>
+<div class="still-about-footer">
+  <ul class="list-inline">
+    <li ng-repeat="skill in skills"><code style="color:#444;">{{skill}}</code><span class="visible-xs" style="padding:0.3em;"></span></li>
+  </ul>
+</div>
 </div>
