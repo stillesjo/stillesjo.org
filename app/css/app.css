@@ -74,3 +74,13 @@ kbd {
 .still-about-footer ul {
   padding-top:90px;
 }
+
+.still-dropdown > .dropdown-menu {
+  background-color:#111;
+  border:none;
+  border-top-left-radius:4px!important;
+}
+.still-dropdown > .dropdown-menu a {
+  color:#FFF;
+}
+
