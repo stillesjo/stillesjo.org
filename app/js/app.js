@@ -18,9 +18,10 @@ stillInteractiveApp.controller('AboutController', ['$scope', function($scope) {
 stillInteractiveApp.config(['$routeProvider', 
     function($routeProvider) {
       $routeProvider.
-        when('/shet', {
-          templateUrl: 'partials/SHET.html',
-        }).when('/',{
+        //when('/shet', {
+        //  templateUrl: 'partials/SHET.html',
+        //}).
+          when('/',{
           templateUrl: 'partials/home.html',
         }).when('/about',{
           templateUrl: 'partials/about.html',
