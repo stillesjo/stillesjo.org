@@ -33,7 +33,7 @@ kbd {
  */
 .still-header {
   background-color:#615192;
-  padding:200px 0;
+  padding:150px 0;
   text-align:center;
   margin-bottom:2em;
 }
@@ -68,8 +68,8 @@ kbd {
   text-align:center;
   background-color:#615192;
   height:200px;
-  border-top:2px solid #251556;
-  border-bottom:2px solid #251556;
+  border-top:2px solid #4B956F;
+  border-bottom:2px solid #4B956F;
 }
 .still-about-footer ul {
   padding-top:90px;
