@@ -95,3 +95,9 @@ footer > p {
 .btn {
   margin:1em 0;
 }
+.form-control-feedback {
+  position: relative;
+  display: inline;
+  top: 0;
+  line-height: 14px;
+}

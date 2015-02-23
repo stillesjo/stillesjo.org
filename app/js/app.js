@@ -14,6 +14,19 @@ stillInteractiveApp.controller('AboutController', ['$scope', function($scope) {
   $scope.skills= [ "C++", "Java","Python", "Ruby", "HTML/CSS", "Javascript", "Ruby On Rails", "PHP"];
 }]);
 
+stillInteractiveApp.controller("FooterController", ["$scope", function($scope) {
+  $scope.hideButton = function() {
+    $("#contactButton").hide();
+  }
+
+  $scope.submit = function() {
+    $("#contactButton").show();
+    $("#collapsedForm").collapse("hide");
+    $("#still-success").collapse("show").delay(3000).hide("slow");
+  }
+
+}]);
+
 stillInteractiveApp.config(['$routeProvider', 
     function($routeProvider) {
       $routeProvider.
