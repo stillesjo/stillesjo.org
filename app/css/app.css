@@ -88,3 +88,10 @@ kbd {
   border-bottom-left-radius:7px;
   border-bottom-right-radius:7px;
 }
+
+footer > p {
+  margin-bottom:0;
+}
+.btn {
+  margin:1em 0;
+}

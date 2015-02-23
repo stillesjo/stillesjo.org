@@ -14,7 +14,6 @@ stillInteractiveApp.controller('AboutController', ['$scope', function($scope) {
   $scope.skills= [ "C++", "Java","Python", "Ruby", "HTML/CSS", "Javascript", "Ruby On Rails", "PHP"];
 }]);
 
-
 stillInteractiveApp.config(['$routeProvider', 
     function($routeProvider) {
       $routeProvider.
