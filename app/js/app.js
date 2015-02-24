@@ -22,9 +22,13 @@ stillInteractiveApp.controller("FooterController", ["$scope", function($scope) {
   $scope.close = function() {
     $("#still-collapsed-form-collapse").collapse("hide");
   }
-  $scope.first = Math.floor(Math.random()*10 + 1);
-  $scope.second = Math.floor(Math.random()*10 + 1);
-  $scope.result = $scope.first + $scope.second;
+
+  $scope.generateValidation = function() {
+    $scope.first = Math.floor(Math.random()*10 + 1);
+    $scope.second = Math.floor(Math.random()*10 + 1);
+    $scope.result = $scope.first + $scope.second;
+  }
+  $scope.generateValidation();
 
   $scope.submit = function() {
     $("#still-collapsed-form-collapse").collapse("hide");
