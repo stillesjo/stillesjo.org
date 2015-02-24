@@ -43,7 +43,7 @@
             <div class="form-group">
               <label for="InputReal">What is {{first}} + {{second}} ? (Simple Spam Checker)</label>
               <div class="input-group">
-                <input type="text" class="form-control" name="InputReal" id="InputReal" required>
+                <input type="number" class="form-control" name="InputReal" id="InputReal" required min="{{result}}" max="{{result}}">
                 <span class="input-group-addon"><i class="glyphicon glyphicon-ok form-control-feedback"></i></span>
               </div>
             </div>
