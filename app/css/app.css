@@ -101,3 +101,22 @@ footer > p {
   top: 0;
   line-height: 14px;
 }
+
+#still-collapsed-form-style{
+  position:fixed;
+  left:2em;
+  right:2em;
+  top:100px;
+  box-shadow: 0 10px 6px -6px #777;
+  -webkit-box-shadow: 0 10px 6px -6px #777;
+  -moz-box-shadow: 0 10px 6px -6px #777;
+}
+#still-success, #still-failed{
+  position:fixed;
+  bottom:1em;
+  left:1em;
+}
+
+#still-close-button {
+  margin:1em;
+}

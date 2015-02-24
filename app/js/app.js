@@ -15,15 +15,22 @@ stillInteractiveApp.controller('AboutController', ['$scope', function($scope) {
 }]);
 
 stillInteractiveApp.controller("FooterController", ["$scope", function($scope) {
-  $scope.hideButton = function() {
-    $("#contactButton").hide();
+
+  //$scope.contact = function() {
+  //  $("#still-collapsed-form-collapse").collapse("toggle");
+  //};
+  $scope.close = function() {
+    $("#still-collapsed-form-collapse").collapse("hide");
   }
+  $scope.first = Math.floor(Math.random()*10 + 1);
+  $scope.second = Math.floor(Math.random()*10 + 1);
 
   $scope.submit = function() {
-    $("#contactButton").show();
-    $("#collapsedForm").collapse("hide");
-    $("#still-success").collapse("show").delay(3000).hide("slow");
+    
+    $("#still-collapsed-form-collapse").collapse("hide");
+    $("#still-success").collapse("show").delay(5000).hide("slow");
   }
+
 
 }]);
 
@@ -41,4 +48,3 @@ stillInteractiveApp.config(['$routeProvider',
           redirectTo: "/"
         });
     }]);
-

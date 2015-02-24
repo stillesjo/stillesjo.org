@@ -12,45 +12,50 @@
         </div>
       </div>
     </div>
-    <div class="row collapse still-contact-form jumbotron" id="collapsedForm">
-      <form role="form" ng-submit="submit()">
-        <div class="col-xs-12">
-          <div class="well well-sm"><strong><i class="glyphicon glyphicon-ok"></i> Required Field</strong></div>
-          <div class="form-group">
-            <label for="InputName:">Your name</label>
-            <div class="input-group">
-              <input type="text" class="form-control" name="InputName" placeholder="Enter Name" required>
-              <span class="input-group-addon"><i class="glyphicon glyphicon-ok form-control-feedback"></i></span>
+    <div id="still-collapsed-form-collapse" class="collapse">
+      <div id="still-collapsed-form-style" class="still-collapsed-form row jumbotron">
+        <h2 style="float:left;">Contact me!</h2>
+        <button ng-click="close()" id="still-close-button" class="close" type="button">&times;</button>
+        <form role="form" ng-submit="submit()">
+          <div class="col-xs-12">
+            <div class="well well-sm"><strong><i class="glyphicon glyphicon-ok"></i> Required Field</strong></div>
+            <div class="form-group">
+              <label for="InputName:">Your name</label>
+              <div class="input-group">
+                <input type="text" class="form-control" name="InputName" placeholder="Enter Name" required>
+                <span class="input-group-addon"><i class="glyphicon glyphicon-ok form-control-feedback"></i></span>
+              </div>
             </div>
-          </div>
-          <div class="form-group">
-            <label for="InputEmail">Your Email</label>
-            <div class="input-group">
-              <input type="email" class="form-control" id="InputEmail" name="InputEmail" placeholder="Enter Email" required>
-              <span class="input-group-addon"><i class="glyphicon glyphicon-ok form-control-feedback"></i></span>
+            <div class="form-group">
+              <label for="InputEmail">Your Email</label>
+              <div class="input-group">
+                <input type="email" class="form-control" id="InputEmail" name="InputEmail" placeholder="Enter Email" required>
+                <span class="input-group-addon"><i class="glyphicon glyphicon-ok form-control-feedback"></i></span>
+              </div>
             </div>
-          </div>
-          <div class="form-group">
-            <label for="InputMessage">Message</label>
-            <div class="input-group">
-              <textarea name="InputMessage" id="InputMessage" class="form-control" rows="5" required></textarea>
-              <span class="input-group-addon"><i class="glyphicon glyphicon-ok form-control-feedback"></i></span>
+            <div class="form-group">
+              <label for="InputMessage">Message</label>
+              <div class="input-group">
+                <textarea name="InputMessage" id="InputMessage" class="form-control" rows="5" required></textarea>
+                <span class="input-group-addon"><i class="glyphicon glyphicon-ok form-control-feedback"></i></span>
+              </div>
             </div>
-          </div>
-          <div class="form-group">
-            <label for="InputReal">What is 3 + 5 ? (Simple Spam Checker)</label>
-            <div class="input-group">
-              <input type="text" class="form-control" name="InputReal" id="InputReal" required>
-              <span class="input-group-addon"><i class="glyphicon glyphicon-ok form-control-feedback"></i></span>
+            <div class="form-group">
+              <label for="InputReal">What is {{first}} + {{second}} ? (Simple Spam Checker)</label>
+              <div class="input-group">
+                <input type="text" class="form-control" name="InputReal" id="InputReal" required>
+                <span class="input-group-addon"><i class="glyphicon glyphicon-ok form-control-feedback"></i></span>
+              </div>
             </div>
+            <input type="submit" name="submit" id="submit" value="Submit" class="btn btn-info pull-right">
           </div>
-          <input type="submit" name="submit" id="submit" value="Submit" class="btn btn-info pull-right">
-        </div>
-      </form>
+        </form>
+      </div>
     </div>
-    <button class="btn btn-info" id="contactButton" type="button" data-toggle="collapse" data-target="#collapsedForm" aria-expanded="false" aria-controls="collapsedForm" ng-click="hideButton()"> 
+    <button class="btn btn-info" id="contactButton" type="button" data-toggle="collapse" data-target="#still-collapsed-form-collapse" aria-expanded="false" aria-controls="still-collapsed-form-collapse" ng-click="contact()">
+      <!--<button class="btn btn-info" id="contactButton" type="button" ng-click="contact()">-->
       <span class="glyphicon glyphicon-envelope"></span> Contact
-    </button>
+      </button>
   </div>
 
 </footer>
