@@ -22,9 +22,6 @@ kbd {
   background-color:#999;
 }
 
-.jumbotron {
-  min-height:300px;
-}
 .jumbotron h2, .jumbotron p {
   color:#333;
 }
@@ -55,7 +52,6 @@ kbd {
  * About stuff
  */
 .still-about {
-  margin-top:2em;
   background-color:#444;
   padding:2em;
 }
@@ -106,7 +102,7 @@ footer > p {
   position:fixed;
   left:2em;
   right:2em;
-  top:100px;
+  top:1em;
   box-shadow: 0 10px 6px -6px #777;
   -webkit-box-shadow: 0 10px 6px -6px #777;
   -moz-box-shadow: 0 10px 6px -6px #777;
