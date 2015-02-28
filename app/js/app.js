@@ -16,9 +16,6 @@ stillInteractiveApp.controller('AboutController', ['$scope', function($scope) {
 
 stillInteractiveApp.controller("FooterController", ["$scope", function($scope) {
 
-  //$scope.contact = function() {
-  //  $("#still-collapsed-form-collapse").collapse("toggle");
-  //};
   $scope.close = function() {
     $("#still-collapsed-form-collapse").collapse("hide");
   }
@@ -41,13 +38,14 @@ stillInteractiveApp.controller("FooterController", ["$scope", function($scope) {
 stillInteractiveApp.config(['$routeProvider', 
     function($routeProvider) {
       $routeProvider.
-        //when('/shet', {
-        //  templateUrl: 'partials/SHET.html',
-        //}).
           when('/',{
           templateUrl: 'partials/home.html',
         }).when('/about',{
           templateUrl: 'partials/about.html',
+        }).when('/shet',{
+          templateUrl: 'partials/SHET.html',
+        }).when('/experiplan',{
+          templateUrl: 'partials/experiplan.html',
         }).otherwise({
           redirectTo: "/"
         });
