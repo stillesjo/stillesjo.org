@@ -68,6 +68,8 @@ stillInteractiveApp.config(['$routeProvider',
           templateUrl: 'partials/SHET.html',
         }).when('/experiplan',{
           templateUrl: 'partials/experiplan.html',
+        }).when('/blog',{
+          templateUrl: 'partials/blog.html',
         }).otherwise({
           redirectTo: "/"
         });
