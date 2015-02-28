@@ -72,6 +72,3 @@ stillInteractiveApp.config(['$routeProvider',
           redirectTo: "/"
         });
     }]);
-
-
-
