@@ -8,7 +8,7 @@
   border-color:#4B956F;
 }
 
-img {
+.still-round-img {
   border-radius:50%;
   -webkit-border-radius:50%;
   border:0.2em solid #BBB;
@@ -47,6 +47,7 @@ kbd {
   padding:2em 1em;
   text-align:left;
   background-color:#222;
+  margin-bottom:0;
 }
 
 .still-home-header .btn-success {
@@ -125,4 +126,30 @@ footer > p {
 
 #still-close-button {
   margin:1em;
+}
+#contactButton {
+  -ms-transform: rotate(-90deg); /* IE 9 */
+  -webkit-transform: rotate(-90deg); /* Chrome, Safari, Opera */
+  transform: rotate(-90deg);
+  position:fixed;
+  right:-70px;
+  top:50%;
+  padding-bottom:80px;
+  vertical-align:top;
+}
+
+.still-document {
+  background-color:#FEFEFE;
+  padding:2em;
+  color:#333;
+}
+.still-document-jumbotron {
+  background-color:#ABABAB;
+  box-shadow: 0 10px 6px -6px #000;
+  -webkit-box-shadow: 0 10px 6px -6px #000;
+  -moz-box-shadow: 0 10px 6px -6px #000;
+}
+.still-document-jumbotron > h2,
+.still-document-jumbotron > p{
+  color:#121212;
 }

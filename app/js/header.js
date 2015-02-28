@@ -8,6 +8,7 @@ stillInteractiveApp.controller('HeaderController',['$scope', '$location', functi
   {name:'Experiplan', href:'experiplan'}
   ];
   $scope.hidestuff = function() {
-    $("#navbar").collapse("hide");
+    if($(window).width() <= 768)
+      $("#still-navbar").collapse("hide");
   }
 }]);

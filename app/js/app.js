@@ -31,6 +31,24 @@ stillInteractiveApp.controller("FooterController", ["$scope", function($scope) {
     $("#still-collapsed-form-collapse").collapse("hide");
     $("#still-success").collapse("show").delay(5000).hide("slow");
   }
+  $scope.index = 0;
+  $scope.move_out = function() {
+    if ($scope.index <= 0) {
+        $scope.index = 1;
+      $('#contactButton').animate({
+        right: '+=50px'
+      }, 200);
+    }
+  }
+  $scope.move_in = function(button) {
+    if ($scope.index == 1) {
+      $scope.index = 0;
+      $('#contactButton').animate({
+        right: '-70px'
+      }, 200);
+
+    }
+  }
 
 
 }]);
@@ -38,7 +56,7 @@ stillInteractiveApp.controller("FooterController", ["$scope", function($scope) {
 stillInteractiveApp.config(['$routeProvider', 
     function($routeProvider) {
       $routeProvider.
-          when('/',{
+        when('/',{
           templateUrl: 'partials/home.html',
         }).when('/about',{
           templateUrl: 'partials/about.html',
@@ -50,3 +68,6 @@ stillInteractiveApp.config(['$routeProvider',
           redirectTo: "/"
         });
     }]);
+
+
+
