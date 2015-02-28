@@ -14,6 +14,12 @@ stillInteractiveApp.controller('AboutController', ['$scope', function($scope) {
   $scope.skills= [ "C++", "Java","Python", "Ruby", "HTML/CSS", "Javascript", "Ruby On Rails", "PHP"];
 }]);
 
+stillInteractiveApp.controller("ContactController", ["$scope", function($scope) {
+  $scope.open_contact = function() {
+    $("#still-collapsed-form-collapse").collapse("show");
+  }
+}]);
+
 stillInteractiveApp.controller("FooterController", ["$scope", function($scope) {
 
   $scope.close = function() {
@@ -49,8 +55,6 @@ stillInteractiveApp.controller("FooterController", ["$scope", function($scope) {
 
     }
   }
-
-
 }]);
 
 stillInteractiveApp.config(['$routeProvider', 

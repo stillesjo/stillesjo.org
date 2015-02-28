@@ -4,7 +4,7 @@ stillInteractiveApp.controller('HeaderController',['$scope', '$location', functi
     return viewLocation == $location.path();
   };
   $scope.products = [
-  {name:'SHET', href:'shet'},
+  {name:'Scrum Helper Estimation Tool', href:'shet'},
   {name:'Experiplan', href:'experiplan'}
   ];
   $scope.hidestuff = function() {
