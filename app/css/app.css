@@ -45,7 +45,7 @@ kbd {
 
 .still-header-small {
   padding:2em 1em;
-  text-align:left;
+  text-align:right;
   background-color:#222;
   margin-bottom:0;
 }
@@ -139,17 +139,23 @@ footer > p {
 }
 
 .still-document {
-  background-color:#FEFEFE;
+  background-color:#555;
   padding:2em;
-  color:#333;
+  color:#DDD;
+  text-align:justify;
 }
 .still-document-jumbotron {
-  background-color:#78B494;
+  background-color:#5CDB55;
   box-shadow: 0 10px 6px -6px #000;
   -webkit-box-shadow: 0 10px 6px -6px #000;
   -moz-box-shadow: 0 10px 6px -6px #000;
 }
 .still-document-jumbotron > h2,
+.still-document-jumbotron > h3,
+.still-document-jumbotron > h3 > small,
 .still-document-jumbotron > p{
   color:#121212;
+}
+.still-underline {
+  border-bottom:2px #111 solid;
 }
