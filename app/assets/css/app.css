@@ -30,6 +30,10 @@ kbd {
  */
 .still-home-header {
   background-color:#615192;
+  overflow:auto;
+}
+.still-home-header-content {
+  margin-top:5em;
 }
 .still-home-header h1 {
   font-size:5em;
@@ -37,10 +41,9 @@ kbd {
 
 .still-header {
   font-size:1.6em;
-  margin-top:1em;
-  padding:150px 0;
   text-align:center;
   margin-bottom:2em;
+  height:600px;
 }
 
 .still-header-small {
