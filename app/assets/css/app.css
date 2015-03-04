@@ -52,6 +52,7 @@ kbd {
 
 .still-home-header .btn-success {
   background-color:#615192;
+  padding:1em 2em;
 }
 
 .still-home-header .btn-success:hover {
@@ -158,4 +159,13 @@ footer > p {
 }
 .still-underline {
   border-bottom:2px #111 solid;
+}
+.still-p-pop {
+  padding: 3px 5px;
+  font-size:90%;
+  color:#615192;
+  background-color:#f0f0f0;
+  border-radius:4px;
+  font-familt: Menlo, Monaco, Consolas, "Courier New", monospace;
+
 }
