@@ -1,7 +1,7 @@
 {
   "name": "stillesjo.org",
   "version": "1.0.0",
-  "description": "Still Interactive official web site",
+  "description": "stillesjo.org web site",
   "main": "index.js",
   "scripts": {
     "postinstall" : "bower install",
