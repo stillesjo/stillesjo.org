@@ -2,17 +2,8 @@
 
 
 var stillInteractiveApp = angular.module('stillInteractiveApp', [
-    'ngRoute', 'mgcrea.ngStrap', 'ngResource'
+    'ngRoute', 'mgcrea.ngStrap', 'ngResource', 'stillInteractiveApp.about'
 ]);
-
-stillInteractiveApp.controller('AboutController', ['$scope', function($scope) {
-  $scope.social_networks = [
-  { url:'https://github.com/stillesjo', img:'github.png' },
-  { url:'https://se.linkedin.com/in/stillesjo/en', img:'linkedin.png'},
-  { url:'https://twitter.com/stillesjo', img:'twitter.png'}
-  ];
-  $scope.skills= [ "C++", "Java","Python", "Ruby", "HTML/CSS", "Javascript", "Ruby On Rails", "PHP"];
-}]);
 
 stillInteractiveApp.controller("ContactController", ["$scope", function($scope) {
   $scope.open_contact = function() {
@@ -62,15 +53,11 @@ stillInteractiveApp.config(['$routeProvider',
       $routeProvider.
         when('/',{
           templateUrl: 'partials/home.html',
-        }).when('/about',{
-          templateUrl: 'partials/about.html',
         }).when('/shet',{
           templateUrl: 'partials/SHET.html',
         }).when('/experiplan',{
           templateUrl: 'partials/experiplan.html',
         }).when('/blog',{
           templateUrl: 'partials/blog.html',
-        }).otherwise({
-          redirectTo: "/"
         });
     }]);
