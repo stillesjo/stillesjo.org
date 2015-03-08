@@ -8,9 +8,15 @@ angular.module('stillInteractiveApp.footer', [])
     $("#still-collapsed-form-collapse").collapse("hide");
   }
 
+  $scope.first=0;
+  $scope.second=0;
   $scope.generateValidation = function() {
-    $scope.first = Math.floor(Math.random()*10 + 1);
-    $scope.second = Math.floor(Math.random()*10 + 1);
+    var a = $scope.first;
+    var b = $scope.second;
+    while (a == $scope.first)
+      $scope.first = Math.floor(Math.random()*10 + 1);
+    while (b == $scope.second)
+      $scope.second = Math.floor(Math.random()*10 + 1);
     $scope.result = $scope.first + $scope.second;
   }
   $scope.generateValidation();
@@ -34,7 +40,6 @@ angular.module('stillInteractiveApp.footer', [])
       $('#contactButton').animate({
         right: '-70px'
       }, 200);
-
     }
   }
 }]);

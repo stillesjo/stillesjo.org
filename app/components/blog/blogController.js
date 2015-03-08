@@ -11,4 +11,5 @@ angular.module('stillInteractiveApp.blog', ['ngRoute'])
 
 .controller('BlogController', ['$scope', function($scope) {
   //Empty controller
+  $scope.banana = 1;
 }]);

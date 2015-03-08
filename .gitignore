@@ -17,3 +17,4 @@
 *.swp
 bower_components
 /app/libs
+node_modules
