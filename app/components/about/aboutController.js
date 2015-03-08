@@ -13,7 +13,6 @@ angular.module('stillInteractiveApp.about', [
 }])
 
 .controller('AboutController', ['$scope', function($scope) {
-  console.log("This shit pwnz");
   $scope.social_networks = [
   { url:'https://github.com/stillesjo', img:'github.png' },
   { url:'https://se.linkedin.com/in/stillesjo/en', img:'linkedin.png'},
