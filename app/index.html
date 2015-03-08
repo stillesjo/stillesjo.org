@@ -13,13 +13,13 @@
   </head>
   <body>
 
-    <div id="header-container" ng-include src="'partials/header.html'">
+    <div id="header-container" ng-include src="'shared/header.html'">
     </div>
     <div class="view-container">
       <div ng-view class="view-frame">
       </div>
     </div>
-    <div id="header-container" ng-include src="'partials/footer.html'">
+    <div id="header-container" ng-include src="'shared/footer/footer.html'">
     </div>
 
 
@@ -37,6 +37,6 @@
     <script src="components/experiplan/experiplanController.js" type="text/javascript" charset="utf-8"></script>
     <script src="components/blog/blogController.js" type="text/javascript" charset="utf-8"></script>
     <script src="shared/contactController.js" type="text/javascript" charset="utf-8"></script>
-    <script src="shared/footerController.js" type="text/javascript" charset="utf-8"></script>
+    <script src="shared/footer/footerController.js" type="text/javascript" charset="utf-8"></script>
   </body>
 </html>
