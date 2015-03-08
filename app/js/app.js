@@ -2,7 +2,7 @@
 
 
 var stillInteractiveApp = angular.module('stillInteractiveApp', [
-    'ngRoute', 'mgcrea.ngStrap', 'ngResource', 'stillInteractiveApp.about', 'stillInteractiveApp.home', 'stillInteractiveApp.shet'
+    'ngRoute', 'mgcrea.ngStrap', 'ngResource', 'stillInteractiveApp.about', 'stillInteractiveApp.home', 'stillInteractiveApp.shet', 'stillInteractiveApp.experiplan'
 ]);
 
 stillInteractiveApp.controller("ContactController", ["$scope", function($scope) {
@@ -51,9 +51,7 @@ stillInteractiveApp.controller("FooterController", ["$scope", function($scope) {
 stillInteractiveApp.config(['$routeProvider', 
     function($routeProvider) {
       $routeProvider
-        .when('/experiplan',{
-          templateUrl: 'partials/experiplan.html',
-        }).when('/blog',{
+        .when('/blog',{
           templateUrl: 'partials/blog.html',
         });
     }]);
