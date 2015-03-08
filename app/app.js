@@ -9,6 +9,7 @@ var stillInteractiveApp = angular.module('stillInteractiveApp', [
     'stillInteractiveApp.shet', 
     'stillInteractiveApp.experiplan',
     'stillInteractiveApp.footer',
+    'stillInteractiveApp.header',
     'stillInteractiveApp.contact',
     'stillInteractiveApp.blog'
 ]);

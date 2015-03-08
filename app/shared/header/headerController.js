@@ -1,5 +1,7 @@
 
-stillInteractiveApp.controller('HeaderController',['$scope', '$location', function($scope, $location) {
+angular.module('stillInteractiveApp.header', [])
+
+.controller('HeaderController',['$scope', '$location', function($scope, $location) {
   $scope.isActive = function(viewLocation) {
     return viewLocation == $location.path();
   };
