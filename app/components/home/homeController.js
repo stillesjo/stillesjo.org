@@ -11,4 +11,5 @@ angular.module('stillInteractiveApp.home', ['ngRoute'])
 }])
 
 .controller('HomeController', ['$scope', function($scope) {
+  $scope.header = "stillesjo.org";
 }]);

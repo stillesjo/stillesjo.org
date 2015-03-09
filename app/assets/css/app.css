@@ -163,12 +163,16 @@ footer > p {
 .still-underline {
   border-bottom:2px #111 solid;
 }
+
 .still-p-pop {
+  margin-top:2em;
+}
+
+.still-p-pop-span {
   padding: 3px 5px;
   font-size:90%;
   color:#615192;
   background-color:#f0f0f0;
   border-radius:4px;
-  font-familt: Menlo, Monaco, Consolas, "Courier New", monospace;
-
+  font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
 }
