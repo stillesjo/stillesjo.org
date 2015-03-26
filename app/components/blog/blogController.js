@@ -3,7 +3,7 @@
 angular.module('stillInteractiveApp.blog', ['ngRoute', 'ngResource'])
 
 .factory("Blog", function($resource) {
-  return $resource("https://:url//api/blog/:id", { url: "localhost:3000", id: "@id" },
+  return $resource("http://:url//blog_entries/index/:id", { url: "localhost:3000", id: "@id" },
       {
         'create':   { method: 'POST' },
         'index':    { method: 'GET', isArray: true },

@@ -1,4 +1,16 @@
 Rails.application.routes.draw do
+  namespace :api, defaults: { format: :json}do
+    get 'blog_entries/index'
+
+    get 'blog_entries/show'
+
+    get 'blog_entries/update'
+
+    get 'blog_entries/destroy'
+
+    get 'blog_entries/create'
+  end
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
